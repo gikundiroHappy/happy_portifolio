@@ -14,17 +14,18 @@
     />
     <title>Document</title>
   </head>
-  <body class="sm:bg-yellow-300 md:bg-green-300 lg:bg-pink-300 xl:bg-blue-300
-   2xl:bg-red-300">
-    <div class="p-4 font-abc sm:px-20">
-      <div class="hidden sm:flex justify-between py-5 mb-10 mt-5">
+  <body>
+    <!-- sm:bg-yellow-300 md:bg-green-300 lg:bg-pink-300 xl:bg-blue-300 2xl:bg-red-300 -->
+    <div class="p-4 lg:px-40 font-abc sm:px-8">
+      <div class="hidden sm:flex justify-between items-center py-5 mt-5 ">
         <div>
-          <p><span class="font-corith text-[30px]"><a href="#home"> H</span> appy</a></p>
+          <p class="font-semibold"><span class="font-corith text-[30px]"><a href="#home"> H</span> appy</a></p>
         </div>
         <div>
-          <ul class="flex gap-10 text-sm">
+          <ul class="flex gap-10 text-[12px]">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#portifolio">Portifolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -32,9 +33,9 @@
       </div>
       <div id="home">
         <div
-          class="sm:mb-[100px] sm:py-[50px] grid grid-cols-3 pr-10 sm:flex sm:justify-between gap-10"
+          class="grid grid-cols-4 sm:mb-[100px] sm:py-[15px] sm:flex gap-5 lg:gap-10 pt-5 md:mt-20"
         >
-          <div class="grid grid-cols-1 col-span-1 pt-7 sm:pt-20">
+          <div class="grid grid-cols-1 col-span-1 pt-7 sm:pt-20 pl-5">
             <span
               ><i class="fa-brands fa-linkedin-in" style="color: #806bc2"></i
             ></span>
@@ -45,10 +46,11 @@
               ><i class="fa-brands fa-twitter" style="color: #806bc2"></i
             ></span>
           </div>
-          <div class="hidden sm:block space-y-8 mt-10 sm:pl-10">
+
+          <div class="hidden sm:block space-y-6 mt-10 sm:pl-10 md:w-[55%]">
             <p class="font-bold text-lg">Hi, I'am Happy</p>
             <p class="text-[15px]">Frontend developer</p>
-            <p class="leading-6 text-[13px]">
+            <p class="leading-6 text-[12px]">
               I embrace challenges to continually improve my skills. My passion
               lies in using technical know-how to make a positive impact in
               people's lives.
@@ -66,14 +68,25 @@
               ></a>
             </button>
           </div>
-          <div class="col-span-2 bg-purple-00 bg-purple-600 rounded-full">
-            <img src="./images/one.png" alt="" class="object-fit h-" />
+          
+          <div class="col-span-2 pt-5 sm:mt-[45px]">
+            <svg viewBox="0 0 200 187" width="170" height="150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#9333EA">
+                <mask id="mask0" mask-type="alpha">
+                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                </mask>
+                <g mask="url(#mask0)">
+                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                    <image class=" w-[210px]" x="12" y="18" href="./images/one.png"/>                
+                  </g>
+            </svg>
           </div>
+
         </div>
-        <div class="space-y-10 mt-10 pb-[50px] sm:hidden">
+        
+        <div class="space-y-4 mt-10 pb-[50px] sm:hidden">
           <p class="font-bold text-lg">Hi, I'am Happy</p>
-          <p class="text-[15px]">Frontend developer</p>
-          <p class="leading-6 text-[13px]">
+          <p class="text-[13px]">Frontend developer</p>
+          <p class="leading-5 text-[11px]">
             I embrace challenges to continually improve my skills. My passion
             lies in using technical know-how to make a positive impact in
             people's lives.
@@ -91,25 +104,27 @@
             ></a>
           </button>
         </div>
+
       </div>
+
       <div class="mt-10 space-y-5 mb-20" id="about">
-        <div>
+        <div >
           <p class="font-bold text-lg">About Me</p>
           <div class="border-b-4 border-purple-500 w-[40px] mt-2"></div>
         </div>
         <div class="sm:grid sm:grid-cols-2 md:pr-20">
-        <div class=" flex justify-center items-center mt-14">
-          <img src="./images/aboutimg.jpeg" alt="" class="w-[65%] sm:w- h-40 sm:h-80 md:h-80 object-cover rounded-lg">
+        <div class=" flex justify-center items-center mt-14 ">
+          <img src="./images/aboutimg.jpeg" alt="my Image" class="w-[65%] h-40 sm:h-80 md:h-80 object-cover rounded-lg">
         </div>
-        <div class="mt-10">
-        <p class="text-[13px] leading-6 p-5 ">
+        <div class="mt-5">
+        <p class="text-[11px] leading-5 p-3">
           I am a software developer who is passionate about my work. I've
           created some web applications and websites using different programming
           languages and technologies such as ReactJS, TypeScript , JavaScript
           and Tailwind CSS. I'm always excited to learn and try out new
-          technologies and keep up with the latest trends in the industry
+          technologies and keep up with the latest trends in the industry.
         </p>
-        <p class="font-semibold text-center py-7">
+        <p class="font-semibold text-center py-6">
           Technologies <span class="text-purple-700">stack</span>
         </p>
         <div
@@ -119,17 +134,17 @@
             <span
               ><i class="fa-brands fa-html5" style="color: #806bc2"></i
             ></span>
-            <p>Html</p>
+            <p class="text-[11px]">Html</p>
           </div>
           <div>
             <span><i class="fa-brands fa-js" style="color: #806bc2"></i></span>
-            <p>Javascript</p>
+            <p class="text-[11px]">Javascript</p>
           </div>
           <div>
             <span
               ><i class="fa-brands fa-react" style="color: #806bc2"></i
             ></span>
-            <p>React</p>
+            <p class="text-[11px]">React</p>
           </div>
           <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
@@ -149,21 +164,23 @@
     </div>
 
       </div>
+
       <div id="education">
         <div>
           <p class="font-bold text-lg ">Education</p>
           <div class="border-b-4 border-purple-500 w-[40px] mt-2 mb-10"></div>
         </div>
+
         <div class=" text-[13px] sm:grid grid-cols-2">
-        <div class="space-y-8  sm:pl-20">
+        <div class="space-y-8 sm:px-5">
         <div class="space-y-3 ">
           <p>2021 - 2023</p>
           <p class="font-bold">University of rwanda</p>
-          <p>In a major of computer and software engineering</p>
+          <p class="text-[11px]">In a major of computer and software engineering</p>
           </div>
           <div class="space-y-3">
-          <p>June 2023 - August 2023
-            <p class="font-bold">Udacity</p>
+          <p >June 2023 - August 2023
+            <p class="font-bold text-[11px]">Udacity</p>
           <p>JavaScript</p>
         </div>
       </div>
@@ -172,10 +189,10 @@
           <p>Amali Tech | July 2023 - Present</p>
           <p class="font-bold">Frontend Engineer trainee</p>
           <ul class="space-y-3">
-            <li>Developed a CV builder web application with ReactJs and
+            <li class="text-[11px]">Developed a CV builder web application with ReactJs and
               Tailwind CSS that enables people to quickly create and
               download their resumes.</li>
-              <li>Built a dictionary web application with Vanilla JavaScript
+              <li class="text-[11px]">Built a dictionary web application with Vanilla JavaScript
                 that lets users look up words and hear how they're
                 pronounced.</li>
           </ul>
@@ -184,42 +201,55 @@
           <p>Igire Rwanda | February 2023 - June 2023</p>
           <p class="font-bold">Frontend Engineer trainee</p>
           <ul>
-            <li>Contributed on a team project called Savenest, a saving
-              app utilizing ReactJS, enabling both individual and teambased saving functionalities</li>
+            <li class="text-[11px]">Contributed on a team project called Savenest, a saving
+              app utilizing ReactJS, enabling both individual and team based saving functionalities.</li>
           </ul>
         </div>
       </div>
     </div>
       </div>
+
       <div  id="services" class="mt-20">
         <div>
           <p class="font-bold text-lg ">Services</p>
           <div class="border-b-4 border-purple-500 w-[40px] mt-2 mb-10"></div>
         </div>
       
-      <div class="w-full sm:flex sm:gap-10 text-sm space-y-5">
-        <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white">
-          <span><i class="fa-solid fa-certificate" style="color: #806bc2;"></i></span>
+      <div class="sm:flex sm:gap-4 text-sm space-y-5 h-[230px]">
+        <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white sm:h-[100%] sm:w-[35%] mt-5">
+          <span class="text-[20px]"><i class="fa-solid fa-certificate" style="color: #806bc2;"></i></span>
           <p class="font-bold">UI/UX Design</p>
-          <p>I make digital things easy to 
+          <p class="text-[11px]">I make digital things easy to 
             use and nice to look at.</p>
         </div>
-        <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white">
-          <span><i class="fa-solid fa-code" style="color: #806bc2;"></i></span>
-          <p class="font-bold">Frontend development</p>
-          <p>I design websites that are
+        <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white sm:h-[100%] sm:w-[35%]">
+          <span class="text-[20px]"><i class="fa-solid fa-code" style="color: #806bc2;"></i></span>
+          <p class="font-bold ">Frontend development</p>
+          <p class="text-[11px]">I design websites that are
             easy to use and makes 
             every thing work smoothly .</p>
         </div>
-        <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white">
-          <span><i class="fa-solid fa-mobile-screen-button" style="color: #806bc2;"></i></span>
+        <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white sm:h-[100%] sm:w-[35%]">
+          <span class="text-[20px]"><i class="fa-solid fa-mobile-screen-button" style="color: #806bc2;"></i></span>
           <p class="font-bold">Mobile Apps</p>
-          <p> I'm the one responsible for 
+          <p class="text-[11px]"> I'm the one responsible for 
             turning ideas into reality on 
             your phone.</p>
         </div>
       </div>
-    </div>
+      </div>
+
+      <div  id="services" class="mt-20">
+        <div>
+          <p class="font-bold text-lg ">Portifolio</p>
+          <div class="border-b-4 border-purple-500 w-[40px] mt-2 mb-10"></div>
+        </div>
+      
+      <div>
+      </div>
+
+      </div>
+    
     </div>
   </body>
 </html>
