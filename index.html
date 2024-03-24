@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/custom.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -239,14 +240,16 @@
       </div>
       </div>
  
-      <div  id="portifolio" class="mt-20">
-        <div>
-          
+    <div  id="portifolio" class="mt-20 pb-20">
+        <div> 
           <p class="font-bold text-lg ">Portifolio</p>
           <div class="border-b-4 border-purple-500 w-[40px] mt-2 mb-10"></div>
         </div>
-      
-      <div class="sm:flex justify-center gap-10" >
+
+      <div class="mySwiper swiper-container">
+      <div class="swiper-wrapper ">
+
+      <div class="sm:flex justify-center gap-10 swiper-slide" >
         <div >
         <img src="./assets/images/app1.webp" class="h-[200px] w-[100%] sm:w-[350px] rounded-lg"/>
         </div>
@@ -259,8 +262,52 @@
         </div>
       </div>
 
+      <div class="sm:flex justify-center gap-10 swiper-slide" >
+        <div >
+        <img src="./assets/images/app1.webp" class="h-[200px] w-[100%] sm:w-[350px] rounded-lg"/>
+        </div>
+        <div class="space-y-4 mt-5">
+          <h1 class="text-[12px] font-semibold">Muvi</h1>
+          <p class="text-[11px]">A movie steaming app where a user is able to see the trailer of any movie he want.</p>
+          <button class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold">
+          <a href="">Demo<span class="ml-3"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </button>
+        </div>
       </div>
+
+      <div class="sm:flex justify-center gap-10 swiper-slide" >
+        <div >
+        <img src="./assets/images/app1.webp" class="h-[200px] w-[100%] sm:w-[350px] rounded-lg"/>
+        </div>
+        <div class="space-y-4 mt-5">
+          <h1 class="text-[12px] font-semibold">Muvi</h1>
+          <p class="text-[11px]">A movie steaming app where a user is able to see the trailer of any movie he want. </p>
+          <button class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold">
+          <a href="">Demo<span class="ml-3"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </button>
+        </div>
+      </div>
+
+      </div>
+
+     <div class="swiper-button-next"><i class="uil uil-angle-right swiper-portfolio-icon"></i>
+     </div>
+     <div class="swiper-button-prev"><i class="uil uil-angle-left swiper-portfolio-icon"></i>
+     </div>
+     <div class="swiper-pagination"></div>
+     </div>
+
+  </div>
+      
     
     </div>
+
+    <Script src="Js/swiper-bundle.min.js"></Script>
+    <script src="Js/script.js"></script>
   </body>
 </html>
+
+<!-- 
+swipper video:
+https://www.youtube.com/watch?v=iIwALoXqJ5c 
+-->
