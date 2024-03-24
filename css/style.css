@@ -1,0 +1,23 @@
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+.swiper-portfolio-icon{
+    font-size: 10px;
+    background-color: blueviolet;
+}
+.swiper-button-prev{
+    left: -40px;
+}
+.mySwiper > .swiper-pagination{
+    bottom: 5rem;
+}
+.nav-btn{
+    height: 40px;
+    width: 40px;
+}
+.nav-btn::after,
+.nav-btn::before{
+    font-size: 100%;
+    color: purple;
+}
