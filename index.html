@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- sm:bg-yellow-300 md:bg-green-300 lg:bg-pink-300 xl:bg-blue-300 2xl:bg-red-300 -->
-    <div class="px-8 lg:px-40 font-abc sm:px-8 ">
+<div class="lg:px-40 font-abc sm:px-8 sm:bg-yellow-300 md:bg-green-300 lg:bg-pink-300 xl:bg-blue-300 2xl:bg-red-300">
       <div class="hidden sm:flex justify-between items-center py-5 mt-5 ">
         <div>
           <p class="font-semibold"><span class="font-corith text-[30px]"><a href="#home"> H</span> appy</a></p>
@@ -34,20 +34,36 @@
         </div>
       </div>
 
+      <div class="sm:hidden fixed w-full bottom-0 bg-white z-10">
+        <ul class="text-[12px] space-y-3 flex flex-wrap justify-center items-center px-5 py-4">
+          <li class="w-[30%] hover:text-purple-600"><a href="#home" class="flex flex-col text-center"><i class="fa-solid fa-house"></i>Home</a></li>
+          <li class="w-[30%] hover:text-purple-600"><a href="#about" class="flex flex-col text-center"><i class="fa-regular fa-user"></i>About</a></li>
+          <li class="w-[30%] hover:text-purple-600"><a href="#education" class="flex flex-col text-center"><i class="fa-solid fa-book"></i>Education</a></li>
+          <li class="w-[30%] hover:text-purple-600"><a href="#services" class="flex flex-col text-center"><i class="fa-solid fa-briefcase"></i>Services</a></li>
+          <li class="w-[30%] hover:text-purple-600"><a href="#portifolio" class="flex flex-col text-center"><i class="fa-regular fa-image"></i>Portifolio</a></li>
+          <li class="w-[30%] hover:text-purple-600"><a href="#contact" class="flex flex-col text-center"><i class="fa-solid fa-phone"></i>Contact</a></li>
+        </ul>
+        <div class="w-full flex justify-end py-2">
+        <button class="px-8  flex-end" id="close"><i class="fa-solid fa-xmark" style="color: #806bc2"></i></button>
+        </div>
+      </div>
+
+      <div class="px-8">
+
       <div id="home">
         <div
           class="grid grid-cols-4 sm:mb-[100px] sm:py-[15px] sm:flex gap-5 lg:gap-10 pt-5 md:mt-20"
         >
           <div class="grid grid-cols-1 col-span-1 pt-7 sm:pt-20 pl-5">
-            <span
+            <a href="https://www.linkedin.com/in/ange-marie-happy-gikundiro-7aa285270"
               ><i class="fa-brands fa-linkedin-in" style="color: #806bc2"></i
-            ></span>
-            <span
+            ></a>
+            <a href="https://github.com/gikundiroHappy"
               ><i class="fa-brands fa-github" style="color: #806bc2"></i
-            ></span>
-            <span
+            ></a>
+            <a href="https://twitter.com/happygikundiro?s=11&t=fPoUL6Qs1yp2wZAJSgJ6oA"
               ><i class="fa-brands fa-twitter" style="color: #806bc2"></i
-            ></span>
+            ></a>
           </div>
 
           <div class="hidden sm:block space-y-6 mt-10 sm:pl-10 md:w-[55%]">
@@ -342,8 +358,22 @@
             </div>
           </div>
 
-          <form action="">
-            <input type="text" placeholder="try..." class="w-full bg-slate-200 px-5">
+          <form action="" class="space-y-4">
+            <input type="text" placeholder="Name" class="w-full bg-[#EEEFFD] px-5 rounded-md text-[13px] py-3 border-none outline-none"/>
+            <input type="text" placeholder="Email" class="w-full bg-[#EEEFFD] px-5 rounded-md text-[13px] py-3 border-none outline-none"/>
+            <textarea type="text" placeholder="Message" class="w-full h-40 bg-[#EEEFFD] px-5 rounded-md text-[13px] py-3 border-none outline-none"></textarea>
+            <button
+              class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold"
+            >
+              <a href=""
+                >Send Message
+                <span class="ml-3"
+                  ><i
+                    class="fa-solid fa-angle-right"
+                    style="color: #ffffff"
+                  ></i></span
+              ></a>
+            </button>
           </form>
         </div>
 
@@ -352,7 +382,38 @@
         </div>
 
     </div>
+  </div>
 
+    <div id="footer" class="bg-purple-600 mx-0 space-y-8 py-6 px-8">
+        <div>
+          <p class="font-bold text-lg text-white">Happy</p>
+          <p class="text-[12px] text-white">Frontend developer</p>
+        </div>
+
+        <div>
+          <ul class="text-[12px] text-white space-y-3">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portifolio">Portifolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="flex gap-6">
+          <a href="https://www.linkedin.com/in/ange-marie-happy-gikundiro-7aa285270"
+            ><i class="fa-brands fa-linkedin-in" style="color: white"></i
+          ></a>
+          <a href="https://github.com/gikundiroHappy"
+            ><i class="fa-brands fa-github" style="color: white"></i
+          ></a>
+          <a href="https://twitter.com/happygikundiro?s=11&t=fPoUL6Qs1yp2wZAJSgJ6oA"
+            ><i class="fa-brands fa-twitter" style="color: white"></i
+          ></a>
+        </div>
+
+    </div>
+</div>
     <Script src="./Js/swiper-bundle.min.js"></Script>
     <script src="./Js/script.js"></script>
   </body>
