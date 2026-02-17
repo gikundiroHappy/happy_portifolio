@@ -16,7 +16,7 @@
     />
     <title>Document</title>
   </head>
-  <body>
+<body>
     <!-- sm:bg-yellow-300 md:bg-green-300 lg:bg-pink-300 xl:bg-blue-300 2xl:bg-red-300 -->
 <div class="lg:px-40 font-abc">
       <div class="hidden sm:flex justify-between items-center py-5 mt-5 ">
@@ -56,8 +56,7 @@
         </div>
       </div>
 
-      <div class="px-8">
-
+    <div class="px-8">
       <div id="home">
         <div
           class="grid grid-cols-4 sm:mb-[100px] sm:py-[15px] sm:flex gap-5 lg:gap-10 pt-5 md:mt-20"
@@ -76,7 +75,7 @@
 
           <div class="hidden sm:block space-y-6 mt-10 sm:pl-10 md:w-[55%]">
             <p class="font-bold text-lg">Hi, I'am Happy</p>
-            <p class="text-[15px]">Frontend developer</p>
+            <p class="text-[15px]">Software developer</p>
             <p class="leading-6 text-[12px]">
               I embrace challenges to continually improve my skills. My passion
               lies in using technical know-how to make a positive impact in
@@ -85,7 +84,7 @@
             <button
               class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold"
             >
-              <a href=""
+              <a href="#contact"
                 >Contact Me
                 <span class="ml-3"
                   ><i
@@ -103,7 +102,7 @@
                 </mask>
                 <g mask="url(#mask0)">
                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                    <image class=" w-[210px]" x="12" y="18" href="./images/one.png"/>                
+                    <image class=" w-[210px]" x="12" y="18" href="./images/home.png"/>             
                   </g>
             </svg>
           </div>
@@ -113,7 +112,7 @@
         <div class="space-y-4 mt-10 pb-[50px] sm:hidden">
           <p class="font-bold text-lg">Hi, I'am Happy</p>
           <p class="text-[13px]">Frontend developer</p>
-          <p class="leading-5 text-[12px]">
+          <p class="leading-5 text-12">
             I embrace challenges to continually improve my skills. My passion
             lies in using technical know-how to make a positive impact in
             people's lives.
@@ -141,40 +140,35 @@
         </div>
         <div class="sm:grid sm:grid-cols-2 md:pr-20">
         <div class=" flex justify-center items-center mt-14 ">
-          <img src="./images/aboutimg.jpeg" alt="my Image" class="w-[65%] h-40 sm:h-80 md:h-80 object-cover rounded-lg">
+          <img src="./images/about.jpeg" alt="my Image" class="w-[65%] h-40 sm:h-80 md:h-80 object-cover rounded-lg">
         </div>
         <div class="mt-5">
-        <p class="text-[12px] leading-6 p-3">
-          I am a software developer who is passionate about my work. I've
-          created some web applications and websites using different programming
-          languages and technologies such as ReactJS, TypeScript , JavaScript
-          and Tailwind CSS. I'm always excited to learn and try out new
-          technologies and keep up with the latest trends in the industry.
+        <p class="text-[13px] leading-6 p-3">
+          As a dedicated software developer, I thrive on creating impactful web and mobile applications that drive
+          value and transform user experiences. With hands-on expertise in modern frameworks and languages like
+          ReactJS, React Native, Angular, JavaScript, TypeScript, and Tailwind CSS, I build responsive, intuitive, and
+          high performing applications. My commitment to continuous learning aid my drive to explore emerging
+          technologies and stay at the forefront of industry trends, bringing fresh perspectives and innovative
+          solutions to every project.
         </p>
         <p class="font-semibold text-center py-6">
           Technologies <span class="text-purple-700">stack</span>
         </p>
-        <div
-          class="flex justify-center items-center text-center gap-7 sm:gap-10 text-[15px]"
-        >
-          <div>
-            <span
-              ><i class="fa-brands fa-html5" style="color: #806bc2"></i
-            ></span>
-            <p class="text-[12px]">Html</p>
+        
+        <div class="flex justify-center items-center gap-5">
+          <button id="prevSkill" class="text-xl">
+            <i class="fa-solid fa-angle-left text-purple-600"></i>
+          </button>
+        
+          <div id="skillsContainer"
+               class="flex gap-10 text-center text-[15px] overflow-hidden w-[250px] justify-center">
           </div>
-          <div>
-            <span><i class="fa-brands fa-js" style="color: #806bc2"></i></span>
-            <p class="text-[12px]">Javascript</p>
-          </div>
-          <div>
-            <span
-              ><i class="fa-brands fa-react" style="color: #806bc2"></i
-            ></span>
-            <p class="text-[12px]">React</p>
-          </div>
-          <div><i class="fa-solid fa-angle-right"></i></div>
+        
+          <button id="nextSkill" class="text-xl">
+            <i class="fa-solid fa-angle-right text-purple-600"></i>
+          </button>
         </div>
+
         <div class="text-center mt-10">
         <button
           class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold"
@@ -201,34 +195,37 @@
         <div class=" text-[13px] sm:grid grid-cols-2">
         <div class="space-y-8 sm:px-5">
         <div class="space-y-3 ">
-          <p class="text-[11px]">2021 - 2024</p>
-          <p class="font-bold">University of rwanda</p>
-          <p class="text-[12px]">In a major of computer and software engineering</p>
+          <p class="text-[12px]">2021 - 2025</p>
+          <p class="font-bold text-[13px]">University of rwanda</p>
+          <p class="text-[13px]">In a major of computer and software engineering</p>
           </div>
           <div class="space-y-3">
-          <p class="text-[11px]">June 2023 - August 2023
-            <p class="font-bold text-[12px]">Udacity</p>
+          <p class="text-[12px]">June 2023 - August 2023
+            <p class="font-bold text-[13px]">Udacity</p>
           <p>JavaScript</p>
         </div>
       </div>
       <div class="space-y-8">
         <div class="space-y-3 mt-20 sm:mt-1 ">
-          <p class="text-[11px]">Amali Tech | July 2023 - Present</p>
+          <p class="text-[13px]">Amali Tech | July 2023 - January 2025</p>
           <p class="font-bold">Frontend Engineer trainee</p>
           <ul class="space-y-3">
-            <li class="text-[12px] leading-5">Developed a CV builder web application with ReactJs and
+            <li class="text-[13px] leading-5">
+              Built trainee management system with Angular for tracking cohorts, attendance and grades.
+            </li>
+            <li class="text-[13px] leading-5">Developed a CV builder web application with ReactJs and
               Tailwind CSS that enables people to quickly create and
               download their resumes.</li>
-              <li class="text-[12px] leading-5">Built a dictionary web application with Vanilla JavaScript
+              <li class="text-[13px] leading-5">Built a dictionary web application with Vanilla JavaScript
                 that lets users look up words and hear how they're
                 pronounced.</li>
           </ul>
         </div>
         <div class="space-y-3">
-          <p class="text-[11px]">Igire Rwanda | February 2023 - June 2023</p>
+          <p class="text-[13px]">Igire Rwanda | February 2023 - June 2023</p>
           <p class="font-bold">Frontend Engineer trainee</p>
           <ul>
-            <li class="text-[12px] leading-5">Contributed on a team project called Savenest, a saving
+            <li class="text-[13px] leading-5">Contributed on a team project called Savenest, a saving
               app utilizing ReactJS, enabling both individual and team based saving functionalities.</li>
           </ul>
         </div>
@@ -246,20 +243,20 @@
         <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white sm:col-span-1 mt-5 ">
           <span class="text-[20px]"><i class="fa-solid fa-certificate" style="color: #806bc2;"></i></span>
           <p class="font-bold">UI/UX Design</p>
-          <p class="text-[12px]">I make digital things easy to 
+          <p class="text-[13px]">I make digital things easy to 
             use and nice to look at.</p>
         </div>
         <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white sm:col-span-1 ">
           <span class="text-[20px]"><i class="fa-solid fa-code" style="color: #806bc2;"></i></span>
-          <p class="font-bold ">Frontend development</p>
-          <p class="text-[12px]">I design websites that are
+          <p class="font-bold ">Software development</p>
+          <p class="text-[13px]">I design websites that are
             easy to use and makes 
             every thing work smoothly .</p>
         </div>
         <div class="text-center space-y-5 rounded-md shadow-xl p-7 bg-white sm:col-span-1">
           <span class="text-[20px]"><i class="fa-solid fa-mobile-screen-button" style="color: #806bc2;"></i></span>
           <p class="font-bold">Mobile Apps</p>
-          <p class="text-[12px]"> I'm the one responsible for 
+          <p class="text-[13px]"> I'm the one responsible for 
             turning ideas into reality on 
             your phone.</p>
         </div>
@@ -280,8 +277,21 @@
         <img src="./assets/images/app2.jpg" class="h-[200px] w-[100%] sm:w-[350px] rounded-lg"/>
         </div>
         <div class="space-y-4 mt-5">
+          <h1 class="text-[12px] font-semibold">NotiBell</h1>
+          <p class="text-[13px]">Designed and implemented a smart doorbell system using ESP32 and OLED display that notifies the homeowner via mobile app if no one is home to respond, with real-time messages shown on the gate.</p>
+          <button class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold">
+          <a href="https://github.com/gikundiroHappy/NotiBell">Demo<span class="ml-3"><i class="fa-solid fa-arrow-right"></i></span></a>
+            </button>
+        </div>
+      </div>
+
+      <div class="sm:flex justify-center gap-10 swiper-slide" >
+        <div >
+        <img src="./assets/images/app2.jpg" class="h-[200px] w-[100%] sm:w-[350px] rounded-lg"/>
+        </div>
+        <div class="space-y-4 mt-5">
           <h1 class="text-[12px] font-semibold">Dictionary Web app</h1>
-          <p class="text-[11px]">Built a dictionary web application with Vanilla JavaScript
+          <p class="text-[13px]">Built a dictionary web application with Vanilla JavaScript
             that lets users look up words and hear how they're
             pronounced</p>
           <button class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold">
@@ -296,7 +306,7 @@
         </div>
         <div class="space-y-4 mt-5">
           <h1 class="text-[12px] font-semibold">CV Builder App</h1>
-          <p class="text-[11px]">Developed a CV builder web application with ReactJs and
+          <p class="text-[13px]">Developed a CV builder web application with ReactJs and
             Tailwind CSS that enables people to quickly create and
             download their resumes. </p>
           <button class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold">
@@ -311,7 +321,7 @@
         </div>
         <div class="space-y-4 mt-5">
           <h1 class="text-[12px] font-semibold">Muvi</h1>
-          <p class="text-[11px]">A movie steaming mobile app where a user is able to see the trailer of any movie he want.</p>
+          <p class="text-[13px]">A movie steaming mobile app where a user is able to see the trailer of any movie he want.</p>
           <button class="bg-purple-600 text-white px-5 py-3 rounded-md text-sm font-semibold">
           <a href="https://github.com/gikundiroHappy/Muvi">Demo<span class="ml-3"><i class="fa-solid fa-arrow-right"></i></span></a>
             </button>
@@ -388,45 +398,55 @@
         <div>
           
         </div>
-
-    </div>
-  </div>
-
-    <div id="footer" class="bg-purple-600 mx-0 space-y-8 pt-6 px-8 py-16 lg:grid lg:grid-cols-4">
-      <div class="sm:grid sm:grid-cols-2 lg:col-span-3 ">
-        <div class="sm:col-span-1 ">
-          <p class="font-bold text-lg text-white">Happy</p>
-          <p class="text-[12px] text-white">Frontend developer</p>
-        </div>
-
-        <div class="col-span-1 ">
-          <ul class="text-[12px] text-white space-y-3 lg:flex lg:gap-10">
-            <li><a href="#about" class="hover:text-green-400">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portifolio">Portifolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
       </div>
-
-        <div class="flex gap-6 lg:col-span-1 ">
-          <a href="https://www.linkedin.com/in/ange-marie-happy-gikundiro-7aa285270"
-            ><i class="fa-brands fa-linkedin-in" style="color: white"></i
-          ></a>
-          <a href="https://github.com/gikundiroHappy"
-            ><i class="fa-brands fa-github" style="color: white"></i
-          ></a>
-          <a href="https://twitter.com/happygikundiro?s=11&t=fPoUL6Qs1yp2wZAJSgJ6oA"
-            ><i class="fa-brands fa-twitter" style="color: white"></i
-          ></a>
-        </div>
-
     </div>
 </div>
+  <div id='footer' class="bg-purple-600 text-white font-abc lg:px-40">
+    <div class=" px-8 py-4 space-y- sm:space-y-0 md:flex md:justify-between">
+      <div class="space-y-4 mb-10 sm:mb-0">
+        <p class="text-2xl font-bold tracking-wide">Happy</p>
+        <p class="text-sm opacity-90">Software Developer</p>
+      </div>
+  
+      <div class="space-y-4 mb-10 md:mb-0">
+        <p class="text-md font-semibold">Navigation</p>
+        <ul class="text-sm md:flex md:justify-between gap-6">
+          <li><a href="#about" class="hover:text-green-300 transition duration-300">About</a></li>
+          <li><a href="#education" class="hover:text-green-300 transition duration-300">Education</a></li>
+          <li><a href="#services" class="hover:text-green-300 transition duration-300">Services</a></li>
+          <li><a href="#portifolio" class="hover:text-green-300 transition duration-300">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-green-300 transition duration-300">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="space-y-4 ">
+        <p class="text-md font-semibold mb-5">Follow Me</p>
+        <div class="flex gap-6 text-xl">
+          <a href="https://www.linkedin.com/in/ange-marie-happy-gikundiro-7aa285270"
+             class="hover:-translate-y-1 hover:text-green-300 transition duration-300">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/gikundiroHappy"
+             class="hover:-translate-y-1 hover:text-green-300 transition duration-300">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://twitter.com/happygikundiro?s=11&t=fPoUL6Qs1yp2wZAJSgJ6oA"
+             class="hover:-translate-y-1 hover:text-green-300 transition duration-300">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="border-t border-purple-500 pb-10 sm:pb-0">
+      <div class="max-w-6xl mx-auto px-8 py-6 flex flex-col gap-3 lg:flex-row lg:justify-between lg:items-center text-xs opacity-80">
+        <p class='text-sm'>© 2026 Happy Gikundiro. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
     <Script src="./Js/swiper-bundle.min.js"></Script>
     <script src="./Js/script.js"></script>
-  </body>
+</body>
 </html>
 
 <!-- 
